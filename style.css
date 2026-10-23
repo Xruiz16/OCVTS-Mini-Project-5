@@ -336,11 +336,13 @@ h2 {
 }
 
 .destination-card {
+  display: block;
   min-width: 0;
   overflow: hidden;
   border: 1px solid #e8e8e1;
   border-radius: 4px;
   background: var(--white);
+  color: inherit;
   transition: box-shadow 220ms ease, transform 220ms ease;
 }
 
@@ -355,6 +357,11 @@ h2 {
   display: block;
   overflow: hidden;
   background: #c6d6cf;
+}
+
+.destination-card:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
 }
 
 .card-image-link::after {
@@ -858,6 +865,7 @@ body {
 
 .detail-card {
   padding: 22px;
+  text-decoration: none;
   border: 1px solid #000;
   background: #ded9d3;
   box-shadow: 5px 5px #8a8179;
